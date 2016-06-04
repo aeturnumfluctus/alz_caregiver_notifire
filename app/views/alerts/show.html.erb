@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @alert.name %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @alert.phone_number %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @alert.person %>
+</p>
+
+<p>
+  <strong>Caregiver:</strong>
+  <%= @alert.caregiver %>
+</p>
+
+<%= link_to 'Edit', edit_alert_path(@alert) %> |
+<%= link_to 'Back', alerts_path %>
