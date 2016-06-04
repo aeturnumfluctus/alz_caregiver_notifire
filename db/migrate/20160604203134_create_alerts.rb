@@ -4,7 +4,7 @@ class CreateAlerts < ActiveRecord::Migration
       t.string :name
       t.string :phone_number
       t.string :person
-      t.integer :caregiver
+      t.integer :caregiver_id
 
       t.timestamps null: false
     end

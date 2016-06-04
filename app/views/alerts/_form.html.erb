@@ -24,8 +24,8 @@
     <%= f.text_field :person %>
   </div>
   <div class="field">
-    <%= f.label :caregiver %><br>
-    <%= f.number_field :caregiver %>
+    <%= f.label :caregiver_id %><br>
+    <%= f.select :caregiver_id, Caregiver.all.map{ |cg| [cg.name, cg.id] } %>
   </div>
   <div class="actions">
     <%= f.submit %>

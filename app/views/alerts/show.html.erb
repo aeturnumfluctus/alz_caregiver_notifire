@@ -1,24 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @alert.name %>
+  <strong><%= @alert.name %></strong>
 </p>
 
 <p>
-  <strong>Phone number:</strong>
-  <%= @alert.phone_number %>
+  <strong>
+    <%= "Call #{@alert.person} at: #{@alert.phone_number}" %>
+  </strong>
 </p>
-
-<p>
-  <strong>Person:</strong>
-  <%= @alert.person %>
-</p>
-
-<p>
-  <strong>Caregiver:</strong>
-  <%= @alert.caregiver %>
-</p>
-
-<%= link_to 'Edit', edit_alert_path(@alert) %> |
-<%= link_to 'Back', alerts_path %>

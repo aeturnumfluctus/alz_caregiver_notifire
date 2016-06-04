@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20160604203134) do
     t.string   "name"
     t.string   "phone_number"
     t.string   "person"
-    t.integer  "caregiver"
+    t.integer  "caregiver_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
